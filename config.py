@@ -1,6 +1,8 @@
 import os
+from dotenv import load_dotenv
+load_dotenv()
 
-EMAIL = "ghanshyampatil2002@gmail.com"
-EMAIL_PASSWORD = "Ssvps@2025"
+EMAIL = os.getenv("Email")
+EMAIL_PASSWORD = os.getenv("EmailPassword")
 OLLAMA_URL = "http://localhost:11434/api/generate"
 MODEL = "qwen:7b"
